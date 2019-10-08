@@ -8,8 +8,11 @@ function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
-        <Route exact path="/" component={Home} />
-        <Route exact path="/introduccion" component={Introduccion} />
+        <header className="App-header">
+          <img src="http://www.imcyc.com/wp-content/uploads/2017/07/logo_200.png" alt="" title="" />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/introduccion" component={Introduccion} />
+        </header>
       </div>
     </Router>
   );
